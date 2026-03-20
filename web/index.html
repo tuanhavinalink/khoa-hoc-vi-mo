@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khóa Học Vĩ Mô | Vinalink Academy</title>
+<meta name="description" content="Khóa học Kinh tế Vĩ mô toàn cầu - Hiểu dòng tiền, chu kỳ kinh tế và chiến lược đầu tư thông minh. Vinalink Academy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+:root {
+  --primary: #1a365d;
+  --primary-light: #2b6cb0;
+  --accent: #ed8936;
+  --accent-dark: #dd6b20;
+  --bg: #f7fafc;
+  --card-bg: #ffffff;
+  --text: #2d3748;
+  --text-light: #718096;
+  --border: #e2e8f0;
+  --gradient: linear-gradient(135deg, #1a365d 0%, #2b6cb0 50%, #3182ce 100%);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+
+/* Header */
+.hero {
+  background: var(--gradient);
+  color: white;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content { position:relative; z-index:1; max-width:800px; margin:0 auto; }
+.hero .brand { font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; opacity:0.8; margin-bottom:0.5rem; }
+.hero h1 { font-family:'Playfair Display',serif; font-size:2.5rem; font-weight:800; margin-bottom:0.75rem; }
+.hero .subtitle { font-size:1.1rem; opacity:0.9; max-width:600px; margin:0 auto 1.5rem; }
+.hero .stats { display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; }
+.hero .stat { text-align:center; }
+.hero .stat-num { font-size:1.8rem; font-weight:800; }
+.hero .stat-label { font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; opacity:0.7; }
+
+/* Navigation */
+.nav-bar {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.nav-inner { max-width:1100px; margin:0 auto; display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center; }
+.nav-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active { background:var(--primary); color:white; border-color:var(--primary); }
+
+/* Layout */
+.container { max-width:1100px; margin:0 auto; padding:1.5rem; display:flex; gap:1.5rem; }
+.sidebar { width:280px; flex-shrink:0; position:sticky; top:80px; height:fit-content; max-height:calc(100vh - 100px); overflow-y:auto; }
+.main-content { flex:1; min-width:0; }
+
+/* Sidebar */
+.toc { background:white; border-radius:12px; padding:1.25rem; box-shadow:0 1px 3px rgba(0,0,0,0.06); border:1px solid var(--border); }
+.toc h3 { font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-light); margin-bottom:1rem; }
+.toc-section { margin-bottom:1rem; }
+.toc-section-title { font-weight:600; font-size:0.85rem; color:var(--primary); padding:0.4rem 0; cursor:pointer; display:flex; align-items:center; gap:0.5rem; }
+.toc-section-title::before { content:'📘'; font-size:0.9rem; }
+.toc-section-title[data-buoi="2"]::before { content:'🌏'; }
+.toc-section-title[data-buoi="3"]::before { content:'🇻🇳'; }
+.toc-section-title[data-buoi="4"]::before { content:'💰'; }
+.toc-item {
+  display:block; padding:0.35rem 0 0.35rem 1.5rem; font-size:0.8rem; color:var(--text-light);
+  text-decoration:none; cursor:pointer; border-left:2px solid transparent; transition:all 0.2s;
+}
+.toc-item:hover { color:var(--primary); border-left-color:var(--primary); }
+.toc-item.active { color:var(--primary); font-weight:600; border-left-color:var(--accent); }
+
+/* Content cards */
+.card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
+.lesson-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.lesson-card:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.1); border-color:var(--primary-light); }
+.lesson-card .badge { display:inline-block; font-size:0.7rem; font-weight:600; padding:0.2rem 0.6rem; border-radius:20px; background:#ebf4ff; color:var(--primary-light); margin-bottom:0.5rem; }
+.lesson-card h3 { font-size:1rem; font-weight:600; margin-bottom:0.4rem; }
+.lesson-card p { font-size:0.82rem; color:var(--text-light); line-height:1.5; }
+
+/* Article view */
+.article { background:white; border-radius:12px; padding:2rem 2.5rem; border:1px solid var(--border); box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+.article .back-btn { display:inline-flex; align-items:center; gap:0.3rem; font-size:0.85rem; color:var(--primary-light); cursor:pointer; margin-bottom:1.5rem; font-weight:500; }
+.article .back-btn:hover { color:var(--accent-dark); }
+.article h1 { font-family:'Playfair Display',serif; font-size:2rem; margin-bottom:0.5rem; color:var(--primary); }
+.article h2 { font-size:1.3rem; margin:1.8rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:2px solid var(--border); color:var(--primary); }
+.article h3 { font-size:1.1rem; margin:1.3rem 0 0.6rem; color:var(--primary-light); }
+.article p { margin-bottom:0.8rem; }
+.article ul, .article ol { margin:0.5rem 0 1rem 1.5rem; }
+.article li { margin-bottom:0.3rem; }
+.article table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.88rem; }
+.article th { background:var(--primary); color:white; padding:0.6rem 0.8rem; text-align:left; font-weight:600; }
+.article td { padding:0.5rem 0.8rem; border-bottom:1px solid var(--border); }
+.article tr:hover td { background:#f7fafc; }
+.article strong { color:var(--primary); }
+.article blockquote { border-left:3px solid var(--accent); padding:0.5rem 1rem; margin:1rem 0; background:#fffaf0; border-radius:0 8px 8px 0; font-style:italic; }
+.yt-link { display:inline-flex; align-items:center; gap:0.4rem; background:#ff0000; color:white; padding:0.4rem 1rem; border-radius:8px; text-decoration:none; font-size:0.85rem; font-weight:500; margin-bottom:1.5rem; }
+.yt-link:hover { background:#cc0000; }
+
+/* Footer */
+.footer { text-align:center; padding:2rem 1.5rem; color:var(--text-light); font-size:0.8rem; border-top:1px solid var(--border); margin-top:2rem; }
+.footer a { color:var(--primary-light); text-decoration:none; }
+
+/* Responsive */
+@media(max-width:768px) {
+  .sidebar { display:none; }
+  .container { padding:1rem; }
+  .article { padding:1.25rem; }
+  .hero h1 { font-size:1.8rem; }
+  .card-grid { grid-template-columns:1fr; }
+}
+
+/* Loading */
+.loading { text-align:center; padding:3rem; color:var(--text-light); }
+.loading::after { content:''; display:block; width:30px; height:30px; margin:1rem auto; border:3px solid var(--border); border-top-color:var(--primary); border-radius:50%; animation:spin 0.8s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg)} }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="brand">Vinalink Academy</div>
+    <h1>📚 Khóa Học Vĩ Mô</h1>
+    <p class="subtitle">Hiểu vĩ mô để không bị "xén lông cừu" — Nắm bắt dòng tiền, chu kỳ kinh tế và chiến lược đầu tư thông minh</p>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Buổi học</div></div>
+      <div class="stat"><div class="stat-num">17</div><div class="stat-label">Bài giảng</div></div>
+      <div class="stat"><div class="stat-num">3h+</div><div class="stat-label">Nội dung</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <button class="nav-btn active" onclick="showOverview()">🏠 Tổng quan</button>
+    <button class="nav-btn" onclick="showBuoi(1)">📘 Buổi 1: Tài chính toàn cầu</button>
+    <button class="nav-btn" onclick="showBuoi(2)">🌏 Buổi 2: Bài học các nước</button>
+    <button class="nav-btn" onclick="showBuoi(3)">🇻🇳 Buổi 3: Việt Nam</button>
+    <button class="nav-btn" onclick="showBuoi(4)">💰 Buổi 4: Đầu tư</button>
+  </div>
+</nav>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="toc">
+      <h3>📑 Mục lục</h3>
+      <div id="toc-content"></div>
+    </div>
+  </aside>
+  <div class="main-content" id="main"></div>
+</div>
+
+<div class="footer">
+  <p>🎓 <strong>Khóa Học Vĩ Mô</strong> — <a href="https://vinalink.edu.vn" target="_blank">Vinalink Academy</a></p>
+  <p>Nguồn: <a href="https://www.youtube.com/playlist?list=PLJGpp0w2JuuRgR9wedOCvemdSFVwoqwOE" target="_blank">YouTube Playlist</a></p>
+</div>
+
+<script>
+const LESSONS = [
+  {buoi:1,idx:1,id:'buoi-1/01-hai-tang-cua-the-gioi',title:'Hai tầng của thế giới',desc:'Bề nổi vs bề chìm của kinh tế, thanh khoản toàn cầu, Carry Trade, Petrodollar',yt:'GfWA4V79taA'},
+  {buoi:1,idx:2,id:'buoi-1/02-carry-trade',title:'Carry Trade',desc:'Cỗ máy tạo bong bóng 20.000 tỷ USD từ Nhật Bản, vay Yên lãi suất 0%',yt:'7vbIqsTp6BQ'},
+  {buoi:1,idx:3,id:'buoi-1/03-ma-tran-kiem-soat-toan-cau',title:'Ma trận kiểm soát toàn cầu',desc:'Kim tự tháp 5 tầng quyền lực, BlackRock/Vanguard/State Street',yt:'kxmEMlnrrZA'},
+  {buoi:1,idx:4,id:'buoi-1/04-giai-ma-suc-manh-kinh-te-my',title:'Giải mã sức mạnh kinh tế Mỹ',desc:'Tại sao Mỹ in tiền mà không sụp đổ? Bí mật đồng USD',yt:'yCuwXKXFRH0'},
+  {buoi:1,idx:5,id:'buoi-1/05-ban-do-50-tai-san-gia-tri-nhat',title:'Bản đồ 50 tài sản giá trị nhất',desc:'Vàng, BRICS, đồng R-Unit, tại sao vàng tăng giá',yt:'SR-JhxpSu4s'},
+  {buoi:1,idx:6,id:'buoi-1/06-dong-do-la-manh-yeu',title:'Đồng đô la mạnh hay yếu',desc:'DXY, tác động lên Việt Nam, 4 hàng rào phòng vệ',yt:'R0A4gp2ZPOk'},
+  {buoi:1,idx:7,id:'buoi-1/07-nghich-ly-vi-mo',title:'Nghịch lý Vĩ Mô',desc:'Fed tăng lãi suất vs Carry Trade — trên đe dưới búa',yt:'cw549aNzk1g'},
+  {buoi:1,idx:8,id:'buoi-1/08-giai-ma-gdp',title:'Giải mã GDP',desc:'GDP phục vụ ai? Cách giới tinh hoa xén 3 tầng lớp',yt:'mKlnJEH9ygs'},
+  {buoi:2,idx:1,id:'buoi-2/01-bai-hoc-tu-nguoi-my',title:'Bài học từ người Mỹ',desc:'Xuất khẩu lạm phát, Petrodollar, kiểm soát dầu mỏ',yt:'YdxJHzZ_m9U'},
+  {buoi:2,idx:2,id:'buoi-2/02-bai-hoc-tu-nguoi-han-quoc',title:'Bài học từ người Hàn Quốc',desc:'Chiến lược Chaebol, xuất khẩu toàn cầu, vượt Nhật Bản',yt:'NjJfgvpNSwA'},
+  {buoi:2,idx:3,id:'buoi-2/03-bai-hoc-tu-nguoi-thai',title:'Bài học từ người Thái',desc:'Sino-Thái thâu tóm, chiếm lĩnh "dạ dày" Việt Nam',yt:'1VZAnUxYj_k'},
+  {buoi:2,idx:4,id:'buoi-2/04-bai-hoc-tu-nguoi-sing',title:'Bài học từ người Singapore',desc:'Đứng trên vai người khổng lồ, chiến lược trung lập',yt:'w_ytSvILHHc'},
+  {buoi:2,idx:5,id:'buoi-2/05-bai-hoc-tu-nguoi-trung-quoc',title:'Bài học từ người Trung Quốc',desc:'Công suất lớn, phá giá đối thủ, thặng dư 1.200 tỷ USD',yt:'xNHpi2Ytics'},
+  {buoi:3,idx:1,id:'buoi-3/01-viet-nam',title:'Việt Nam — Kỷ nguyên vươn mình',desc:'Dân số vàng, sáp nhập đô thị, đổi đất lấy hạ tầng, 5 câu nói then chốt',yt:'h1AnrKeB9OM'},
+  {buoi:4,idx:1,id:'buoi-4/01-hieu-ung-fed-lai-suat',title:'Hiệu ứng FED — Lãi suất',desc:'Fed tăng/giảm lãi suất ảnh hưởng Việt Nam thế nào',yt:'gxYWpUpWJ9w'},
+  {buoi:4,idx:2,id:'buoi-4/02-dau-tu-vang-chung-khoan',title:'Đầu tư Vàng & Chứng khoán',desc:'3 hình thức giao dịch vàng, chiến lược chứng khoán',yt:'mHUNOWcFHNc'},
+  {buoi:4,idx:3,id:'buoi-4/03-phan-tich-dau-tu-bds',title:'Phân tích đầu tư BĐS',desc:'Tụ – Tinh – Xô – Tán, chọn vị trí, timeline 2025-2045',yt:'6HDx4ZJcfhM'},
+];
+
+const BUOI_NAMES = {1:'Buổi 1: Cấu Trúc Tài Chính Toàn Cầu',2:'Buổi 2: Bài Học Từ Các Quốc Gia',3:'Buổi 3: Chiến Lược Việt Nam',4:'Buổi 4: Đầu Tư Thực Chiến'};
+const BUOI_ICONS = {1:'📘',2:'🌏',3:'🇻🇳',4:'💰'};
+
+// File content cache
+const fileCache = {};
+
+function buildTOC() {
+  let html = '';
+  for (let b = 1; b <= 4; b++) {
+    const items = LESSONS.filter(l => l.buoi === b);
+    html += `<div class="toc-section"><div class="toc-section-title" data-buoi="${b}" onclick="showBuoi(${b})">${BUOI_NAMES[b]}</div>`;
+    items.forEach(l => {
+      html += `<a class="toc-item" data-id="${l.id}" onclick="showLesson('${l.id}')">${l.idx}. ${l.title}</a>`;
+    });
+    html += '</div>';
+  }
+  document.getElementById('toc-content').innerHTML = html;
+}
+
+function setActiveNav(idx) {
+  document.querySelectorAll('.nav-btn').forEach((b,i) => b.classList.toggle('active', i===idx));
+}
+function setActiveToc(id) {
+  document.querySelectorAll('.toc-item').forEach(a => a.classList.toggle('active', a.dataset.id===id));
+}
+
+function showOverview() {
+  setActiveNav(0); setActiveToc('');
+  let html = '<div class="card-grid">';
+  for (let b = 1; b <= 4; b++) {
+    const items = LESSONS.filter(l => l.buoi === b);
+    items.forEach(l => {
+      html += `<div class="lesson-card" onclick="showLesson('${l.id}')">
+        <span class="badge">${BUOI_ICONS[b]} Buổi ${b} — Phần ${l.idx}</span>
+        <h3>${l.title}</h3>
+        <p>${l.desc}</p>
+      </div>`;
+    });
+  }
+  html += '</div>';
+  document.getElementById('main').innerHTML = html;
+}
+
+function showBuoi(b) {
+  setActiveNav(b); setActiveToc('');
+  const items = LESSONS.filter(l => l.buoi === b);
+  let html = `<h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin-bottom:1rem;">${BUOI_ICONS[b]} ${BUOI_NAMES[b]}</h2><div class="card-grid">`;
+  items.forEach(l => {
+    html += `<div class="lesson-card" onclick="showLesson('${l.id}')">
+      <span class="badge">Phần ${l.idx}</span>
+      <h3>${l.title}</h3>
+      <p>${l.desc}</p>
+    </div>`;
+  });
+  html += '</div>';
+  document.getElementById('main').innerHTML = html;
+}
+
+async function showLesson(id) {
+  const lesson = LESSONS.find(l => l.id === id);
+  if (!lesson) return;
+  setActiveNav(lesson.buoi); setActiveToc(id);
+
+  document.getElementById('main').innerHTML = '<div class="loading">Đang tải nội dung...</div>';
+
+  let md;
+  if (fileCache[id]) {
+    md = fileCache[id];
+  } else {
+    try {
+      const resp = await fetch('../' + id + '.md');
+      md = await resp.text();
+      fileCache[id] = md;
+    } catch(e) {
+      md = '# ' + lesson.title + '\n\nKhông thể tải nội dung. Vui lòng thử lại.';
+    }
+  }
+
+  // Remove first H1 line (we'll render our own)
+  md = md.replace(/^#\s+.+\n+/, '');
+  // Remove YouTube link line
+  md = md.replace(/📺\s*\[.+?\]\(.+?\)\n*/g, '');
+
+  const rendered = marked.parse(md);
+
+  document.getElementById('main').innerHTML = `
+    <div class="article">
+      <div class="back-btn" onclick="showBuoi(${lesson.buoi})">← Quay lại Buổi ${lesson.buoi}</div>
+      <h1>${lesson.title}</h1>
+      <a class="yt-link" href="https://www.youtube.com/watch?v=${lesson.yt}" target="_blank">▶ Xem trên YouTube</a>
+      ${rendered}
+    </div>`;
+
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// Init
+buildTOC();
+showOverview();
+</script>
+</body>
+</html>
