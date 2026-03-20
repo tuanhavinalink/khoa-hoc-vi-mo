@@ -1,0 +1,236 @@
+# Buổi 1: Phần 1: Hai tầng của TG
+
+Buổi đầu tiên chúng ta sẽ tìm hiểu ai
+tạo ra toàn bộ thế giới này và hai tầng
+của thế giới này nó là cái gì. Bình
+thường mà chúng ta gọi là chúng ta
+đọc báo hay là chúng ta xem truyền hình
+hay chúng ta nghe các cái bài giảng kinh
+tế thế giới hay là vĩ mô thế giới nó
+thường là những cái thứ mà chúng ta
+thường rất nghe rất là quen thuộc như là
+GDP như là tăng trưởng như là xuất nhập
+khẩu hay là như là lạm phát lãi suất hay
+là ổn định vi mô hay là ISG hay là
+chuyển đổi xanh hay là cách mạng AI hay
+là phúc lợi xã hội thì đây những cái thứ
+mà chúng ta được nghe thấy nhiều. Tuy
+nhiên khi mà chúng ta chúng ta nghe
+những thứ này thì chúng ta gần như là
+chúng ta không biết được nó vận hành như
+thế nào thì đằng sau toàn bộ những cái
+thứ mà chúng ta nghe rất là rất là kêu
+như thế này về xuất nhập khẩu, về lạm
+phát, về việc làm, về lãi suất, về tăng
+trưởng tín dụng, về cung tiền, về à đầu
+tư công, về thặng dư suất làm khẩu, tất
+cả những từ khóa nó hoa mỹ như thế.
+Nhưng thật ra nằm đằng sau nó là cái thứ
+khác. Nó là cái thứ mà điều khiển những
+cái bên trên nó chạy bao gồm những cái
+khái niệm như là carry trade, petrol,
+eurodolar, global liquidity hay là chiến
+tranh tiền tệ hay là giới tay tinh hoa
+hay là trừng phạt tài chính hay là kiểm
+soát năng lượng là dữ liệu hay là hành
+vi những cái thứ nó không nói thẳng nó
+chỉ vẫn hành ngâm nhưng quyết định sự
+phân bổ tài sản và quyền lực trên toàn
+cầu này. Đấy, chúng ta thường nghe những
+cái thứ như là lận phát. Thật ra lận
+phát nó chỉ là hệ quả, còn gốc của nó
+chính là thanh khoản toàn cầu. Nó là bơm
+tiền hay là hút tiền? Khi nào bơm tiền
+đúng không ạ? Thì nó sẽ xảy ra lạm phát.
+Khi nó hút tiền à thì nó sẽ tạo ra cái
+việc mà gọi là ừ giải phát. Ví dụ như
+vậy, đối với lãi suất khi mà chúng ta
+nói về lãi suất điều khiển dòng vốn thì
+nó thật ra nó liên quan đến carry trade
+cho nên là phé tăng lãi suất hay giảm
+lãi suất nó liên quan đến cái chữ carry
+trade. Đấy nhưng mà carry trade thì nó
+nó lại là cái thứ điều khiển toàn cầu
+này về vấn đề lãi suất. Tức là fé tăng
+lai giảm lãi suất là liên quan cái chữ
+query trade. Đấy tại sao nó lại có cái
+khái niệm query trade? chúng ta sẽ học ở
+những cái phần tiếp theo hay là tăng
+trưởng GDP
+thì cái câu chuyện là tăng trưởng GDP
+này là nó liên quan đến cái việc gì?
+Mọi người có biết rằng là cái tăng
+trưởng GDP này nó liên quan đến cái khái
+niệm là petro đô la tức là gì? đồng đô
+la được đảm bảo bởi dầu lửa. Đấy. Thế
+cho nên là
+cái việc mà GDP mạnh lên thì à ư đô la
+mạnh lên thì bản chất là Mỹ nó nuôi cái
+tăng trưởng này để
+tiền đô la mạnh lên. Do khi mà tăng
+trưởng kinh tế, tăng trưởng GP thì phải
+mua dầu, mua năng lượng và khi mua năng
+lượng thì phải dùng đô la để mua. Và như
+vậy là đô la mạnh lên. Mọi người hiểu
+không ạ? Cho nên cái khái niệm petrolar
+là khái niệm liên quan đến tăng trưởng
+GDP của các quốc gia. Cho nên là ừ bản
+chất bên ngoài tăng trưởng GDP thì bên
+trong nó là cái khái niệm là gì? Phụ
+thuộc vào cái năng lượng và năng lượng
+đấy phải bỏ tiền đô la để mua. Mọi người
+hiểu không ạ? Hay là cái câu chuyện khái
+niệm là câu chuyện
+nó là môi trường, nó là à xã hội, nó là
+quản trị nhưng mà nó liên quan đến từ là
+gì? luật chơi mới để phân bổ vốn. Nếu mà
+các bạn mà không theo tiêu chuẩn thì các
+bạn sẽ bị loại khỏi cuộc chơi, các bạn
+sẽ được không cấp vốn, các bạn sẽ không
+được vay lãi suất thấp, các bạn sẽ không
+được xuất khẩu và các bạn sẽ bị áp thuế
+đúng không ạ? Thì nó là cái bài học mà
+thế giới vốn nó yêu cầu phải tất cả phải
+tuân thủ, nó tuân thủ theo cái cái tiêu
+chuẩn của nó thì nó mới phân bổ vốn. Cho
+nên là chúng ta phải thấy rằng tất cả
+phải theo cuộc chơi của nó đúng không ạ?
+Thế thì những cái khái niệm ở ngoài nghe
+như là giảm phát khủng hoàng thành chính
+có một khái niệm là khủng hoàng tài
+chính xảy ra khi mà giới tinh hoa được
+cứu và dân phải trả giá bằng cách là dân
+phải mất mắt tài sản tiền bạc thì khái
+niệm nó liên quan đến cái chữ là thu bí
+thu tức là quá to để không thể phá sản.
+Cho nên như có những cái đế chế mà khi
+nó phá sản thì
+ờ chính phủ phải bơm tiền để cứu cái tập
+đoàn đấy. Nhưng mà người dân họ mất sạch
+tiền rồi và họ sẽ phải chịu giả giá. Đó
+chính là người dân phải trả tiền cho
+giới tinh hoa được cứu. Thì đấy chính là
+khủng hoảng tài chính. Hay là ví dụ như
+cái khái niệm như là thương mại tự do.
+Thế thì thật ra thương mại tự do nó liên
+quan đến là gì? Đó chính là khi nào mà
+các quốc gia nghe lời thì sẽ được thương
+mại tự do, khi nào không nghe lời sẽ bị
+cấm vậy. Thế cho nên là liên quan đến từ
+là ờ nó chính là chiến tranh tiền tệ
+đúng không ạ? Thế thì đấy chính là cái
+câu chuyện là là cái mối quan hệ của cái
+bên ngầm và những khái niệm nổi là như
+thế nào chứ không phải là chúng ta cứ
+nghe mấy cái câu nổi thế này và chúng ta
+có thể đọc được kinh tế thế giới nó như
+thế nào đâu. Và chúng ta phải tìm hiểu
+cái đằng sau của cái sự thật đấy nó là
+cái gì. Nó chính là những khái niệm này.
+Đấy.
+Ừ. Cái câu chuyện mà cỗ máy vận hành thì
+đối với cái câu chuyện
+mà vận hành thì nó liên quan đến việc mà
+năng lượng ở đâu, năng lượng kiểm soát
+như thế nào đúng không ạ? Thì nó sẽ liên
+quan đến cái việc mà cái đồng đô la đấy
+nó sẽ trở thành máu của toàn cầu. Và khi
+nó trở thành máu toàn cầu thì đương
+nhiên nó xuất khẩu lạm phát ra quốc gia
+khác. Cho nên Mỹ in càng nhiều tiền
+nó không bị lạm phát bởi các quốc gia
+khác phải gánh lạm phát cho nó đấy. Và
+dòng tiền nó sẽ chảy thế giới nó trở
+thành một cái mạch máu và tất cả phải
+sống nhờ mạch máu. Những cái quốc gia
+nào mà mạch máu nó không chảy đến quốc
+gia đấy sẽ héo mòn. Còn những quốc gia
+nào cho máu chảy đến nhiều quốc gia đấy
+được sinh sống. Cho nên là cỗ máy vận
+hành bơm tài sản đó chính là cỗ máy trái
+tim để nuôi toàn bộ cái thế giới này và
+nó tạo ra những cái bong bóng tài sản và
+đấy là tạo ra cái máy bong bóng lớn nhất
+trong lịch sử. Tại vì cái cỗ máy mà bấm
+vào cái metodolar nó chính là carry
+treat. Cái carry trade này nó chính là
+cỗ máy tạo bong bóng lớn nhất trong lịch
+sử. Tại vì nó là tổng cái số lượng số
+tiền mà carry chết đang vận chuyển
+26.000 ngàn tỷ đô la 26.000 tỷ đô la
+khoản một số tiền vô cùng lớn để có thể
+ảnh hưởng đến toàn cầu đúng không ạ? Như
+vậy bất động sản mà tăng giá đô thị hóa
+dân số nhu cầu mua ở nhà thì nó chỉ là
+cái bài bền nổi thôi chứ bề chìm của nó
+chính là gì? Nó chính là qu trade, nó là
+tiền rẻ, nó là tiền bơm, nó là thổi giá,
+nó là chip money. Thực xuất ra là đang
+hứng dòng tiền đầu cơ toàn cầu nó bơm
+vào. Và khi chúng ta bị động cơ toàn cầu
+bơm vào thì chúng ta lại cảm giác là ui,
+nhà ở đang là có nhu cầu cao ảm, dẫn số
+tăng trưởng rồi thì là kinh tế đang phát
+triển, làm ăn đang người dân đang dầu
+lên chứ không phải thế. Đó chính là bị
+hứng chịu bởi những cái dòng tiền bơm
+vào và hệ quả của nó là gì? tư nhân sẽ
+sẽ lãi lỗ xảy ra thì xã hội bị lỗ. Và
+như vậy chính thấy rằng là tài sản tăng
+nhanh hơn thu nhập, khoảng cách giàu
+nghèo càng mở rộng tại vì là người dân
+càng đầu tư càng bị lỗ. Trong khi đó
+những cái số tiền lớn ấy nó được khéo về
+cho một số các tổ chức đặc biệt trong
+cái hệ thống đặc biệt. Đấy như vậy trong
+một cái thế giới mới
+ờ AI mà chúng ta nghe thấy như tự động
+hóa, tăng trưởng năng suất hay là ổn
+định tránh bạo luận so kinh tế, kiểm
+soát hành vi tiêu dùng. Thật ra tất cả
+những thứ đấy là những cái thứ bề nổi
+thôi. Bề ngoài của nó là chuyển đổi số
+nhưng bên trong của nó nó không phải là
+chuyển đổi số. Bên trong là nó sẽ kiểm
+soát dữ liệu và hành vi của toàn cầu
+này. V cho nên là chúng ta phải hiểu
+rằng là chúng ta hứng khởi với AI, chúng
+ta kiếm tiền AI, chúng ta sử dụng AI để
+giảm bất kỳ phí, tăng doanh thu. Đấy là
+cái mà chúng ta đang nhìn thấy bên bền
+nổi. Bên trong của nó là cái sự kiểm
+soát của toàn bộ thế giới này.
+các cái từ khóa của nền kinh tế thế giới
+chúng ta thấy là những từ khóa như lạm
+phát, dòng tiền, lãi suất, nợ nhưng mà ở
+trong đấy nó là địa chính trị, nó là
+công nghệ, nó ai nó là dân số, nó là
+chuỗi cung ứng, nó là năng lượng. Đấy,
+về cái câu chuyện mà chúng ta nhìn thấy
+ở đây một cái câu chuyện dòng chảy là
+Petrol tạo ra đô la đấy. Fé in tiền đô
+la nhưng đô la tạo thanh khoản. thanh
+khoản thì sẽ nuôi car và caret thì thổi
+giá tài sản và tài sản thì làm giàu cho
+giới tinh hoa và ai là thay thí lao động
+và cuối cùng là gì à các ngân hàng sẽ và
+các cái tổ chức quốc tế các cái tổ chức
+sẽ làm cái việc mà điều hành điều khiển
+giữ trật tự xã hội. Thì tất cả những cái
+thông tin này là những cái thông tin mà
+chúng ta nhìn thấy ở đây. Đấy như vậy
+kết luận kết luận bề ngoài những cái
+ngôn ngữ đấy nhưng thật ra bên trong
+ngầm nó là quyền lực. Ai nhìn bên ngoài
+thì chỉ đi theo câu chuyện đang kể và
+nghe thời sự một cách vui vẻ vậy thôi.
+Nhưng ai nhìn thấy tầng ngầm mới nhìn
+được cái chu kỳ của các nền kinh tế. Lạm
+phát nó không phải là gốc, thanh khoản
+mới là gốc. Điều ghi nhớ liquidity tức
+là thanh khoản, quyết định sự quyết định
+thị trường không phải là tin tức. Bất
+động sản là nơi chú ẩn của dòng tiền đầu
+cơ. AI là công cụ quản trị xã hội mới và
+đừng nghe những gì họ nói. Hãy nhìn dòng
+tiền trả. Yeah.
